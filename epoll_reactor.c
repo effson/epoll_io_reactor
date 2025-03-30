@@ -86,7 +86,7 @@ int accept_cb(int fd){
 	}
 	printf("accept\n");
 	
-	set_event(fd, EPOLLIN, 1);
+	set_event(clientfd, EPOLLIN, 1);
 
 	conn_list[clientfd].fd = clientfd;
 	memset(conn_list[clientfd].rbuffer, 0, BUFFER_LENGTH);
