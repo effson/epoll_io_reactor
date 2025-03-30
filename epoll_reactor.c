@@ -53,7 +53,7 @@ int http_response(connection_t* conn){
 		"Content-Length: 82\r\n"
 		"Content-Type: text/html\r\n"
 		"Date: Sat, 06 Aug 2022 13:16:46 GMT\r\n\r\n"
-		"<html><head><title>0voice.jeff</title></head><body><h1>jeff</h1></body></html>\r\n\r\n");
+		"<html><head><title>myserv.jeff</title></head><body><h1>jeff</h1></body></html>\r\n\r\n");
 	
 	return conn->wlen;
 }
