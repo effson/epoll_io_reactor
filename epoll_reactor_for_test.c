@@ -177,7 +177,7 @@ int main(){
 	epfd = epoll_create(1); // int size
 
 	
-	for (i = 0, i < port_count; i ++) {
+	for (i = 0; i < port_count; i ++) {
 		int sockfd = init_server(port + i);
 		conn_list[sockfd].fd = sockfd;
 		conn_list[sockfd].receive_t.accept_callback = accept_cb;
